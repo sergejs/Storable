@@ -19,7 +19,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/sergejs/encryptable.git", from: "0.0.2"),
+        .package(url: "https://github.com/sergejs/Encryptable.git", .branch("main")),
     ],
     targets: [
         .target(
