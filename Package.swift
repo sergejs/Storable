@@ -6,7 +6,10 @@ import PackageDescription
 let package = Package(
     name: "Storable",
     platforms: [
-        .iOS(.v15),
+        .macOS(.v10_15),
+        .iOS(.v13),
+        .watchOS(.v6),
+        .tvOS(.v13),
     ],
     products: [
         .library(
@@ -16,7 +19,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/sergejs/Encryptable.git", .branch("main")),
+        .package(url: "https://github.com/sergejs/Encryptable.git", .upToNextMajor(from: "0.2.0"))
     ],
     targets: [
         .target(
